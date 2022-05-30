@@ -1,0 +1,50 @@
+[
+    {
+      "pk": 1,
+      "model": "products.category",
+      "fields": {
+        "name": "IPA",
+        "friendly_name": "IPA"
+      }
+    },
+    {
+      "pk": 2,
+      "model": "products.category",
+      "fields": {
+        "name": "stout",
+        "friendly_name": "Stout"
+      }
+    },
+    {
+      "pk": 3,
+      "model": "products.category",
+      "fields": {
+        "name": "lager",
+        "friendly_name": "Lager"
+      }
+    },
+    {
+      "pk": 4,
+      "model": "products.category",
+      "fields": {
+        "name": "other",
+        "friendly_name": "Other"
+      }
+    },
+    {
+      "pk": 5,
+      "model": "products.category",
+      "fields": {
+        "name": "pale ale",
+        "friendly_name": "Pale Ale"
+      }
+    },
+    {
+      "pk": 6,
+      "model": "products.category",
+      "fields": {
+        "name": "pilsener",
+        "friendly_name": "Pilsener"
+      }
+    }
+  ]
