@@ -19,7 +19,7 @@ class Category(models.Model):
 class Product(models.Model):
     
     category = models.ForeignKey('Category', null=True, blank=True, on_delete=models.SET_NULL)
-    ABV = models.CharField(max_length=6, null=True, blank=True)
+    ABV = models.DecimalField(max_digits=4, null=True, decimal_places=1)
     sku = models.CharField(max_length=254, null=True, blank=True)
     name = models.CharField(max_length=50)
     style = models.CharField(max_length=50)

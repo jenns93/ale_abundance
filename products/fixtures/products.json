@@ -4,7 +4,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "5.0",
+        "ABV": 5.0,
         "sku": "7463",
         "name": "Chiostro",
         "style": "Herbed / Spiced Beer",
@@ -19,7 +19,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "11.0",
+        "ABV": 11.0,
         "sku": "7464",
         "name": "Bearded Pat's Barleywine",
         "style": "American Barleywine",
@@ -34,7 +34,7 @@
       "model": "products.product",
       "fields": {
         "category":5,
-        "ABV": "4.7",
+        "ABV": 4.7,
         "sku": "7465",
         "name": "Naughty Nellie's Ale",
         "style": "American Pale Ale (APA)",
@@ -49,7 +49,7 @@
       "model": "products.product",
       "fields": {
         "category":6,
-        "ABV": "4.4",
+        "ABV": 4.4,
         "sku": "7466",
         "name": "Pilsner Urquell",
         "style": "Czech Pilsener",
@@ -64,7 +64,7 @@
       "model": "products.product",
       "fields": {
         "category":5,
-        "ABV": "4.4",
+        "ABV": 4.4,
         "sku": "7467",
         "name": "Black Sheep Ale (Special)",
         "style": "English Pale Ale",
@@ -79,7 +79,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "10.0",
+        "ABV": 10.0,
         "sku": "7468",
         "name": "YouEnjoyMyStout",
         "style": "Russian Imperial Stout",
@@ -94,7 +94,7 @@
       "model": "products.product",
       "fields": {
         "category":1,
-        "ABV": "12.6",
+        "ABV": 12.6,
         "sku": "7469",
         "name": "Benevolence",
         "style": "American Wild Ale",
@@ -109,7 +109,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "8.4",
+        "ABV": 8.4,
         "sku": "7470",
         "name": "Frog's Hollow Double Pumpkin Ale",
         "style": "Pumpkin Ale",
@@ -124,7 +124,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "9.0",
+        "ABV": 9.0,
         "sku": "7471",
         "name": "Stoudt's Barrel Aged Old Abominable",
         "style": "English Barleywine",
@@ -139,7 +139,7 @@
       "model": "products.product",
       "fields": {
         "category":1,
-        "ABV": "6.2",
+        "ABV": 6.2,
         "sku": "7472",
         "name": "One Hop Wonder IPA",
         "style": "American IPA",
@@ -154,7 +154,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "8.5",
+        "ABV": 8.5,
         "sku": "7473",
         "name": "Founders Dirty Bastard",
         "style": "Scotch Ale / Wee Heavy",
@@ -169,7 +169,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "10.5",
+        "ABV": 10.5,
         "sku": "7474",
         "name": "Founders Imperial Stout",
         "style": "Russian Imperial Stout",
@@ -184,7 +184,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "11.2",
+        "ABV": 11.2,
         "sku": "7475",
         "name": "Founders KBS (Kentucky Breakfast Stout)",
         "style": "American Double / Imperial Stout",
@@ -199,7 +199,7 @@
       "model": "products.product",
       "fields": {
         "category":3,
-        "ABV": "8.4",
+        "ABV": 8.4,
         "sku": "7476",
         "name": "Bogemia",
         "style": "Euro Pale Lager",
@@ -214,7 +214,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "7.0",
+        "ABV": 7.0,
         "sku": "7477",
         "name": "Stoudt's Blonde Double MaiBock",
         "style": "Maibock / Helles Bock",
@@ -229,7 +229,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "8.3",
+        "ABV": 8.3,
         "sku": "7478",
         "name": "Founders Breakfast Stout",
         "style": "American Double / Imperial Stout",
@@ -244,7 +244,7 @@
       "model": "products.product",
       "fields": {
         "category":5,
-        "ABV": "6.5",
+        "ABV": 6.5,
         "sku": "7479",
         "name": "Pike India Pale Ale",
         "style": "American IPA",
@@ -259,7 +259,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "5.5",
+        "ABV": 5.5,
         "sku": "7480",
         "name": "Aecht Schlenkerla Fastenbier",
         "style": "Rauchbier",
@@ -274,7 +274,7 @@
       "model": "products.product",
       "fields": {
         "category":1,
-        "ABV": "5.7",
+        "ABV": 5.7,
         "sku": "7481",
         "name": "Kirkland Signature Amber Ale",
         "style": "American Amber / Red Ale",
@@ -289,7 +289,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "11.2",
+        "ABV": 11.2,
         "sku": "7482",
         "name": "Founders KBS (Kentucky Breakfast Stout)",
         "style": "American Double / Imperial Stout",
@@ -304,7 +304,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "10.5",
+        "ABV": 10.5,
         "sku": "7483",
         "name": "Founders Black Biscuit",
         "style": "Old Ale",
@@ -319,7 +319,7 @@
       "model": "products.product",
       "fields": {
         "category":2,
-        "ABV": "8.3",
+        "ABV": 8.3,
         "sku": "7484",
         "name": "Founders Breakfast Stout",
         "style": "American Double / Imperial Stout",
@@ -334,7 +334,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "5.4",
+        "ABV": 5.4,
         "sku": "7485",
         "name": "Aecht Schlenkerla Rauchbier Marzen",
         "style": "Rauchbier",
@@ -349,7 +349,7 @@
       "model": "products.product",
       "fields": {
         "category":1,
-        "ABV": "7.2",
+        "ABV": 7.2,
         "sku": "7486",
         "name": "Nick's Balls Of Gold",
         "style": "American IPA",
@@ -364,7 +364,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "5.0",
+        "ABV": 5.0,
         "sku": "7487",
         "name": "Trafalgar Oak-Aged Rye",
         "style": "Rye Beer",
@@ -379,7 +379,7 @@
       "model": "products.product",
       "fields": {
         "category":1,
-        "ABV": "9.4",
+        "ABV": 9.4,
         "sku": "7488",
         "name": "Founders Double Trouble",
         "style": "American Double / Imperial IPA",
@@ -394,7 +394,7 @@
       "model": "products.product",
       "fields": {
         "category":4,
-        "ABV": "6.9",
+        "ABV": 6.9,
         "sku": "7489",
         "name": "Founders Rabaus",
         "style": "Fruit / Vegetable Beer",
@@ -409,7 +409,7 @@
       "model": "products.product",
       "fields": {
         "category":5,
-        "ABV": "5.4",
+        "ABV": 5.4,
         "sku": "7490",
         "name": "Founders Pale Ale",
         "style": "American Pale Ale (APA)",
