@@ -96,10 +96,11 @@ a.category-badge > span.badge:hover {
     cursor: pointer;
 }
 
-.btt-link:hover {
+.btt-link:hover{
     background: rgb(122, 15, 143) !important;
     color: #fff !important;
 }
+
 
 /* ------------------------------- bootstrap toasts */
 
