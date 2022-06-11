@@ -167,10 +167,14 @@ STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-FREE_DELIVERY_THRESHOLD = 25
-STANDARD_DELIVERY_PERCENTAGE = 10
-
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# Stripe
+FREE_DELIVERY_THRESHOLD = 25
+STANDARD_DELIVERY_PERCENTAGE = 10
+STRIPE_CURRENCY = 'gbp'
+STRIPE_PUBLIC_KEY = os.getenv('STRIPE_PUBLIC_KEY', 'pk_test_51Kx6IEBukwDAW8iNFKPnBgiy3Ur0lqAca3RoxpxH4CKtVD12zUmRD73Gv7qkQcehyzfcWl2odGgTBZgwLa0a1AqO00EmzPY6fp')
+STRIPE_SECRET_KEY = os.getenv('STRIPE_SECRET_KEY', 'sk_test_51Kx6IEBukwDAW8iNHJ0gstKbOvMG5w8YIKZNu0qedcrZ7RLwcPuJCimR04BzUHI7hRJQDvnYyi8Nt0NUOVmQY76j00vDobgzwM')
