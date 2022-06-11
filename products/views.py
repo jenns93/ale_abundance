@@ -3,7 +3,7 @@ from django.contrib import messages
 from django.db.models import Q
 from .models import Product, Category
 from django.db.models.functions import Lower
-
+import random
 # Create your views here.
 
 def all_products(request):
@@ -61,9 +61,41 @@ def product_detail(request, product_id):
     """ A view to show individual product details """
 
     product = get_object_or_404(Product, pk=product_id)
+    products = Product.objects.all()
+    sort = None
+    categories = None
+    direction = None
 
+    items = list(Product.objects.all())
+
+    random_items = random.sample(items, 4)
+
+    if request.GET:
+        if 'sort' in request.GET:
+            sortkey = request.GET['sort']
+            sort = sortkey
+            if sortkey == 'name':
+                sortkey = 'lower_name'
+                products = products.annotate(lower_name=Lower('name'))
+            if sortkey == 'category':
+                sortkey = 'category__name'
+            if 'direction' in request.GET:
+                direction = request.GET['direction']
+                if direction == 'desc':
+                    sortkey = f'-{sortkey}'
+            products = products.order_by(sortkey)
+
+    if request.GET:
+        if 'category' in request.GET:
+            categories = request.GET['category'].split(',')
+            products = products.filter(category__name__in=categories)
+            categories = Category.objects.filter(name__in=categories)
+    
     context = {
         'product': product,
+        'products': products,
+        'current_categories': categories,
+        'random_items': random_items,
     }
-
+    
     return render(request, 'products/product_detail.html', context)

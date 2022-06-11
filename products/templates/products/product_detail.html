@@ -83,7 +83,7 @@
                                     </span>
                                     <span class="text-uppercase">Keep Shopping</span>
                                 </a>
-                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Bag">
+                                <input type="submit" class="btn btn-black rounded-0 text-uppercase mt-5" value="Add to Basket">
                             </div>
                             <input type="hidden" name="redirect_url" value="{{ request.path }}">
                         </div>
@@ -92,6 +92,65 @@
             </div>
         </div>
     </div>
+    <hr>
+    <div class="d-flex justify-content-center">
+        <span class="icon"><i class="fas fa-angle-down"></i></span>
+        <h4 class="d-flex justify-content-center"> You may also enjoy </h4>
+        <span class="icon"><i class="fas fa-angle-down"></i></span>
+    </div>
+    <hr>
+    <div class="row">
+        {% for product in random_items %}
+            {% if product.overall %}
+                <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                    <div class="card h-50 border-0">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            {% if product.image %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                            </a>
+                            {% else %}
+                            <a href="{% url 'product_detail' product.id %}">
+                                <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                            </a>
+                            {% endif %}
+                            <div class="card-body text-center">
+                                <h5 class="card-title mb-0"><strong>{{ product.name }}</strong></h5>
+                            </div>
+                            <div class="card-body text-center">
+                                {% if product.overall %}
+                                    <h6 class="card-title mb-0">£{{ product.price }} | <i class="fas fa-star mr-1" style="color:rgb(189, 187, 67)"></i>{{ product.overall }} / 5</h6>
+                                {% else %}
+                                    <h6 class="card-title mb-0">£{{ product.price }} | No Rating</h6>
+                                {% endif %}
+                            </div>
+                            <div class="card-body text-center">
+                                {% if product.category %}
+                                <h6 class="card-title mb-0">
+                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-beer mr-1" style="color:rgb(122, 15, 143)"></i>{{ product.category.friendly_name }}
+                                    </a>
+                                    |
+                                    {% if product.ABV %}
+                                        ABV {{ product.ABV }} %
+                                    {% else %}
+                                        No ABV Data
+                                    {% endif %}
+
+                                </h6>
+                                {% endif %}
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            {% if product in products|divisibleby:4 %}
+                break
+            {% endif %}   
+            {% else %}
+            {% endif%}
+        {% endfor %}
 {% endblock %}
 
 {% block postloadjs %}
