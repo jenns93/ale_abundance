@@ -12,95 +12,103 @@
 {% block content %}
     <div class="container h-100">
         <div class="row h-100">
-            <div class="col-7 col-md-6 my-auto">
+            <div class="col-12 text-center my-auto">
                 <h1 class="display-4 logo-font text-white">
                     Beers from all across the globe!
                 </h1>
                 <div class="my-5">
                     <h4>
-                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop beer</a>
+                        <a href="{% url 'products' %}" class="shop-now-button btn btn-lg rounded-10 text-uppercase py-3"><strong>Shop beer!</strong> <i class="fas fa-beer"></i></a>
                     </h4>
                 </div>
             </div>
         </div>
-        <div class="col text-center mt-3">
-            <h4 class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3"><i class="fas fa-angle-down"></i> Explore <i class="fas fa-angle-down"></i></h4>
-        </div>
         
-        <section class="pricing py-5">
-            <div class="container">
-              <div class="row">
-                
-                <div class="col-lg-4">
-                  <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                      <h5 class="card-title text-muted text-uppercase text-center">Stout</h5>
-                      <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: English</h6>
-                      <hr>
-                      <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4 to 16%</li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: Sweet, Cream, Irish, Imperial, American</li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-beer"></i></span>Often contain roasted flavours and notes of coffee</span></li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span> Stout meaning "proud" or "brave", after the 14th century took on the connotation of "strong". The first known use of the word in referance for beer was documented in 1677 in the Egerton Manuscript. The expression stout porter was used in the 1700s for strong versions of porter. Stout would eventually only be associated with porter, becoming a synonym for dark beer.</li>
-                      </ul>
-                      <div class="d-grid">
-                        <a href="{% url 'products' %}?category=stout" class="btn btn-primary">Explore Stouts</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
-                <div class="col-lg-4">
-                    <div class="card mb-5 mb-lg-0">
-                      <div class="card-body">
-                        <h5 class="card-title text-muted text-uppercase text-center">IPA</h5>
-                        <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: English</h6>
-                        <hr>
-                        <ul class="fa-ul">
-                          <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4.5 to 20%</li>
-                          <br>
-                          <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: English, American, West Coast</li>
-                          <br>
-                          <li><span class="fa-li"><i class="fas fa-beer"></i></span>Hoppy beer within the broader Pale Ale category</span></li>
-                          <br>
-                          <li><span class="fa-li"><i class="fas fa-book"></i></span>IPA or “India Pale Ale.” Originating in England the beer was said to be made with enough hops to preserve the beer from England all the way to India.</li>
-                        </ul>
-                        <div class="d-grid">
-                          <a href="{% url 'products' %}?category=IPA" class="btn btn-primary">Explore IPA</a>
+        <div class="row">
+          <div class="col-12 my-2">
+              <ul class="list-inline list-unstyled text-center my-0" style="position: ;absolute">
+                  <li class="list-inline-item dropdown">
+                      <button class="shop-now-button btn btn-lg rounded-10 text-uppercase py-3" type="button" data-toggle="collapse" data-target="#collapseExplore" aria-expanded="false" aria-controls="collapseExplore"><i class="fas fa-angle-down"></i> Explore <i class="fas fa-angle-down"></i></button>
+                      <div class="collapse" id="collapseExplore">
+        
+                        <section class="pricing py-5">
+                            <div class="container">
+                              <div class="row">
+                                
+                                <div class="col-lg-4">
+                                  <div class="card mb-5 mb-lg-0">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-muted text-uppercase text-center">Stout</h5>
+                                      <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: English</h6>
+                                      <hr>
+                                      <ul class="fa-ul text-left">
+                                        <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4 to 16%</li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: Sweet, Cream, Irish, Imperial, American</li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-beer"></i></span>Often contain roasted flavours and notes of coffee</span></li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-book"></i></span> Stout meaning "proud" or "brave", after the 14th century took on the connotation of "strong". The first known use of the word in referance for beer was documented in 1677 in the Egerton Manuscript. The expression stout porter was used in the 1700s for strong versions of porter. Stout would eventually only be associated with porter, becoming a synonym for dark beer.</li>
+                                      </ul>
+                                      <div class="text-center my-2">
+                                        <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="{% url 'products' %}?category=stout" class="btn btn-primary">Explore Stouts</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                    
+                                <div class="col-lg-4">
+                                    <div class="card mb-5 mb-lg-0">
+                                      <div class="card-body">
+                                        <h5 class="card-title text-muted text-uppercase text-center">IPA</h5>
+                                        <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: English</h6>
+                                        <hr>
+                                        <ul class="fa-ul text-left">
+                                          <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4.5 to 20%</li>
+                                          <br>
+                                          <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: English, American, West Coast</li>
+                                          <br>
+                                          <li><span class="fa-li"><i class="fas fa-beer"></i></span>Hoppy beer within the broader Pale Ale category</span></li>
+                                          <br>
+                                          <li><span class="fa-li"><i class="fas fa-book"></i></span>IPA or “India Pale Ale.” Originating in England the beer was said to be made with enough hops to preserve the beer from England all the way to India.</li>
+                                        </ul>
+                                        <div class="text-center my-2">
+                                          <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="{% url 'products' %}?category=IPA" class="btn btn-primary">Explore IPA</a>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                    
+                    
+                                <div class="col-lg-4">
+                                  <div class="card mb-5 mb-lg-0">
+                                    <div class="card-body">
+                                      <h5 class="card-title text-muted text-uppercase text-center">PILSNER</h5>
+                                      <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: Czech</h6>
+                                      <hr>
+                                      <ul class="fa-ul text-left">
+                                        <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4.5% to 5%</li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: Bohemian (Czech), German, American</li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-beer"></i></span> Low to moderate carbonation with pale golden yellow colour, and malty flavours and aromas.</span></li>
+                                        <br>
+                                        <li><span class="fa-li"><i class="fas fa-book"></i></span>Invented in the 19th century in the Czech town of Pilsen. Originally so revolting the people of Pilsen poured away 30 kegs in front of the city hall. Then, built a new brewery (Pilsner Urquell) and hired the Bavarian Josef Groll. Josef used the methods learnt from his father along with new brewing methods, and created a light coloured malt resulting in a golden-yellow beer.</li>
+                                      </ul>
+                                      <div class="text-center my-2">
+                                        <a class="shop-now-button btn btn-md rounded-10 text-uppercase py-3" href="{% url 'products' %}?category=pilsener" class="btn btn-primary">Explore Pilsener</a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                    
+                              </div>
+                            </div>
+                          </section>
                         </div>
-                      </div>
-                    </div>
-                  </div>
-    
-    
-                <div class="col-lg-4">
-                  <div class="card mb-5 mb-lg-0">
-                    <div class="card-body">
-                      <h5 class="card-title text-muted text-uppercase text-center">PILSNER</h5>
-                      <h6 class="card-price text-center"><i class="fas fa-globe-europe"></i> Origin: Czech</h6>
-                      <hr>
-                      <ul class="fa-ul">
-                        <li><span class="fa-li"><i class="fas fa-percent"></i></span>Typical Alcohol volume: 4.5% to 5%</li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-search"></i></span>Styles: Bohemian (Czech), German, American</li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-beer"></i></span> Low to moderate carbonation with pale golden yellow colour, and malty flavours and aromas.</span></li>
-                        <br>
-                        <li><span class="fa-li"><i class="fas fa-book"></i></span>Invented in the 19th century in the Czech town of Pilsen. Originally so revolting the people of Pilsen poured away 30 kegs in front of the city hall. Then, built a new brewery (Pilsner Urquell) and hired the Bavarian Josef Groll. Josef used the methods learnt from his father along with new brewing methods, and created a light coloured malt resulting in a golden-yellow beer.</li>
-                      </ul>
-                      <div class="d-grid">
-                        <a href="{% url 'products' %}?category=pilsener" class="btn btn-primary">Explore Pilsener</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-    
+                      </li>
+                  </ul>
               </div>
-            </div>
-          </section>
     </div>
 
     

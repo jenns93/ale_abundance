@@ -55,6 +55,12 @@ body {
     border: 1px solid rgb(122, 15, 143) !important;
 }
 
+.shop-now-button:disabled{
+    background: rgb(122, 15, 143);
+    color: white;
+    border: 1px solid rgb(122, 15, 143) !important;
+}
+
 .text-black {
     color: rgb(122, 15, 143) !important;
 }
