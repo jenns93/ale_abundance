@@ -50,8 +50,9 @@ body {
 .btn-black:hover,
 .btn-black:active,
 .btn-black:focus {
-    background: rgb(122, 15, 143);
-    color: white;
+    background: white;
+    color: rgb(122, 15, 143);
+    border: 1px solid rgb(122, 15, 143) !important;
 }
 
 .text-black {
