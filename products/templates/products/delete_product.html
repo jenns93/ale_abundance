@@ -16,19 +16,19 @@
             <div class="col">
                 <hr>
                 <h2 class="logo-font mb-4">Product Management</h2>
-                <h5 class="text-muted">Edit Product</h5>
+                <h5 class="text-muted">Delete Product</h5>
                 <hr>
             </div>
         </div>
 
         <div class="row">
             <div class="col-12 col-md-6">
-                <form method="POST" action="{% url 'edit_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
+                <form method="POST" action="{% url 'delete_product' product.id %}" class="form mb-2" enctype="multipart/form-data">
                     {% csrf_token %}
-                    {{ form | crispy }}
-                    <div class="text-right">
+                    <h5>Are you sure you want to delete: <strong>{{product.name}}</strong></h5>
+                    <div class="text-left my-5">
                         <a class="btn btn-outline-black rounded-10" href="{% url 'product_detail' product.id %}"><i class="fas fa-chevron-left"></i> Cancel</a>
-                        <button class="btn btn-black rounded-10" type="submit">Update Product <i class="far fa-edit"></i></button>
+                        <button class="btn btn-black rounded-10 ml-2" type="submit">Delete Product <i class="fas fa-trash-alt"></i></button>
                     </div>
                 </form>
             </div>            
