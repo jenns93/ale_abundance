@@ -1,0 +1,20 @@
+Hello {{ order.full_name }}!
+
+This is confirmation of your purchace at Ale Abundance. Information on your order is stated below:
+
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date|date:'d/m/y | h:i' }}
+
+Order Total: £{{ order.order_total }}
+Delivery: £{{ order.delivery_cost }}
+Grand Total: £{{ order.grand_total }}
+
+Your order will be sent to {{ order.street_address1 }} in {{ order.town_or_city }}, {{ order.country }}.
+
+Phone number provided: {{ order.phone_number }}
+
+Any questions? Contact us at {{ contact_email }}.
+
+Thank you for your purchace!
+
+From the Ale Abundance Team
