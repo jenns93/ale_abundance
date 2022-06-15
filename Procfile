@@ -1,1 +1,1 @@
-web: gunicorn ale-abundance.wsgi:application
+web: gunicorn ale_abundance.wsgi:application
