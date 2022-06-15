@@ -1,422 +1,332 @@
 [
-    {
-      "pk": 1,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 5.0,
-        "sku": "7463",
-        "name": "Chiostro",
-        "style": "Herbed / Spiced Beer",
-        "description": "Pours a clouded gold with a thin white head. Nose is quite floral with a larger amount of spices added. Definitely a spice forward fragrance. Flavor has an odd burn that hits on the first sip. After it fades it seems like a dirty vanilla aftertaste. Perhaps this is the absinthe? Regardless of that, I get a quite spiced tone on the tongue. Almost feel a little heat from it. I think that my inexperienced palate on these spices is contributing to my ignorance of what precisely they are. Overall a nice drinker indeed.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 2,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 11.0,
-        "sku": "7464",
-        "name": "Bearded Pat's Barleywine",
-        "style": "American Barleywine",
-        "description": "12oz bottle into 8oz snifter.\t\tDeep ruby red hue with a one finger light tan head that settles to a thin rim along the glass.\t\tSharp piercing hops with some light hard candy in the background. \t\tThe hops provide some bitterness, but they aren't as sharp as I would have expected. Mostly a light candy flavor like in the aroma. Full bodied with good carbonation. The finish is some lingering sweet flavor with a bit of bitterness.\t\tA very sweet barleywine with a weird hard candy flavor that seemed to dominate. Not bad, but I would have liked a little more complexity.",
-        "image": "noimage.png",
-        "overall": "3.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 3,
-      "model": "products.product",
-      "fields": {
-        "category":5,
-        "ABV": 4.7,
-        "sku": "7465",
-        "name": "Naughty Nellie's Ale",
-        "style": "American Pale Ale (APA)",
-        "description": "First enjoyed at the brewpub about 2 years ago, I finally managed to get a bottle.\tSlightly hazy orange-amber topped with a two finger foamy white head.\tVery nice fruity aroma, soft and floral, tea and toast.\tFruity, slightly grapefruity hop note, toast and biscuity malt balance. Hoppier and more floral when it warms up.\tLight-medium bodied, liked it better on draft but still a solid beer.",
-        "image": "noimage.png",
-        "overall": "3.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 4,
-      "model": "products.product",
-      "fields": {
-        "category":6,
-        "ABV": 4.4,
-        "sku": "7466",
-        "name": "Pilsner Urquell",
-        "style": "Czech Pilsener",
-        "description": "First thing I noticed after pouring from green bottle to glass was the skunky smell. Overpowering. Lacing was minimal and faded quickly. Bottle had exp date and was still within freshness date. \t\tTaste was like drinking a milwaukee's best with some skunk. Just couldn't get over the skunky smell to finish my second bottle. Almost $10 a sixer, I would have been better off getting Bud Light.",
-        "image": "noimage.png",
-        "overall": "2.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 5,
-      "model": "products.product",
-      "fields": {
-        "category":5,
-        "ABV": 4.4,
-        "sku": "7467",
-        "name": "Black Sheep Ale (Special)",
-        "style": "English Pale Ale",
-        "description": "A: pours an amber with a one finger head but only with a very strong pour, head recedes to a light layer of foam with some large bubbles and good lacing\tS: sweet caramel and bread from the English malts comes through, some mild fruityness on the back end\tT: not a lot of complexity with this for me. I didn't expect much considering the style but it's just bland and lacking more bready layers\tM/D: more carbonated than I would have wanted. I would expect this to be much better on cask",
-        "image": "noimage.png",
-        "overall": "3.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 6,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 10.0,
-        "sku": "7468",
-        "name": "YouEnjoyMyStout",
-        "style": "Russian Imperial Stout",
-        "description": "served in a snifter; on-tap at CBC.\t\tcolor is the typical imperial stout used motor oil black; impenetrable. by the time the beer arrived at our table the had had receded into a collar around the glass.\t\tnoses offers ample amounts of roastiness, chocolate, molasses and dark fruits, also an atypical tartness to it. not picking up much in the way of bourbon.\t\tflavor imparts more of the same: big notes of roasted malt with chocolate and molasses not far behind, also some dark fruit characters to it and a very distinct and unusual tartness, which adds almost a distinctive flair. more bourbon than i picked up in the aroma but still a subtle presence on that front. medium-full on the palate with average carbonation.\t\toverall a tasty and interesting beer. i like the unique element that the tartness bring; could use a bigger bourbon presence though. also priced very reasonably at $5.50 a glass.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 7,
-      "model": "products.product",
-      "fields": {
-        "category":1,
-        "ABV": 12.6,
-        "sku": "7469",
-        "name": "Benevolence",
-        "style": "American Wild Ale",
-        "description": "my 100th review on-tap! mini snifter\t\t A nutty dark brown color, thin and tanned head with only small lacing all around. \t\t the nose has a fruity, sour and wild yeast aroma up-front. solid, thick and sweet malt underneath, dark fruits, dates and raisins and very tart. \t\t the flavor is a very nice wild-yeast complexity that has tangy and sweet dark fruits, wood-aged alcohol effect along side with a very solid malty balance. wonderful complexity for this wild ale, slightly peppery and herbal on the way down. sour-cherry flavor makes this one really refreshing. Oak and vanilla pop out of the malt in a subtle way and the very end bringa a port wine sweetness.\t\t this one has wonderful balance for a wild yeast ale.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 8,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 8.4,
-        "sku": "7470",
-        "name": "Frog's Hollow Double Pumpkin Ale",
-        "style": "Pumpkin Ale",
-        "description": "One of the better pumpkin ales I've tried so far. Not as imperialized as it may suggest but very nicely balanced and quaffable.\t\tPresentation: 22 oz brown capped bottle. Label pivoting around the image of a standing/hopping frog holding a jar of beer (amber-pumpkin on this version). Perfunctorily terribly designed label with assorted fonts and the standard awful array of blends and color effects with the added novelty of... A picture of the moon under the glow of the name? Side paragraphs offer a general description of the brew, and intent. Lacks any bottling or freshness date. Notes Alc. by Vol. (8.4%), IBUs (7.3), and OG (76). Served in a snifter. \t\tA - Medium amber to orange pumpkin color with a nice creamy head that fades quickly leaving a fair surface memory.\t\tS - Well balanced nose with a characteristic pumpkin sense, sweet and riding on a nice gamut of spices. Good balance, although a bit less and it would be short, hitting the right note with some risk.\t\tT - Follows nicely the smell with a good malt backbone woven with pumpkin and a rich balance of spices complementing the brew.\t\tM - Medium to medium-light body, medium prickly carbonation, finely tuned.\t\tD - Deceptively quaffable given the alcohol bill, which is rather well integrated. Nice pumpkin ale.\t\tNotes: Sure, this could do with an additional hefty note and still be quite notable as a pumpkin ale, but in this incarnation it feels very well rounded, so why touch it?",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 9,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 9.0,
-        "sku": "7471",
-        "name": "Stoudt's Barrel Aged Old Abominable",
-        "style": "English Barleywine",
-        "description": "A snifter filled (several times over) from a 750ml bottle; I pulled this from the dusty clutches of the cellar, a bottle saved for 3+ years from one of my earliest trades. Needed a strong SEPA brew to soften the shocking blow that comes with learning that one of my best friends from high school died today (he was killed by a car while riding his bike in his adopted hometown of Philly ~ a toast to Russ). \t\tThe goofy 'Abominable' cartoon made me smile on an otherwise somber day...\t\tA: Lovely and leathery, an alluring chestnut/garnet, barely translucent. No signs of yeasty bits nor other fatigue from the years in captivity. Starts with about a finger of fizzy but firm khaki cream. A slow droop, then a small break in the topping, then a crescent ring. Slick speckles of lace.\t\tS: Sweet and nutty, toffee and candied fruit - er, fruitcake. A 'buttered rum' quality, but little notable woody/oaky aroma.\t\tT: The requisite toffee, mellowed fruit form a dreamy, dessert-worthy concoction. A little butterscotch (or creme brulee?). Fruity apple pie, something a little brandy-like. Oak, though tame, still holds a fair vanilla bean and charred woodiness. Very well balanced.\t\tM: Velvet, pure velvet...sweetly coating. Modest carbonation and trace amounts of lip-smacking stickiness. Medium thickness. Easy on the tongue, as they say...\t\tD: Love the beer, hate the occasion for opening it. Definitely worth saving, as it's damn delicious and oh so drinkable. Wish I had another; cherish it while you can. That goes for beer and life, both.\t\tThanks to zrrbrrt/jyoungsbcp, aka Josh for sending way back when...",
-        "image": "noimage.png",
-        "overall": "4.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 10,
-      "model": "products.product",
-      "fields": {
-        "category":1,
-        "ABV": 6.2,
-        "sku": "7472",
-        "name": "One Hop Wonder IPA",
-        "style": "American IPA",
-        "description": "Brewed with five hop additions, this alleged IPA has a slight cidery aroma, zero carbonation, and not a shred of head or lace. It is simple, clear amber.\t\t\tUnfortunately, Harmon really dropped the ball on this fall seasonal. It is green tasting and oddly devoid of even the slightest hop aroma. The 68 IBUs of Glacier hops really dont shine, making this hard to reconcile as a single hop showcase beer. One Hop Wonder is not a completely disastrous ale, but the body is lifeless and the beer remains conceptually undeveloped. Nothing in the taste or aroma remotely resemble an IPA. It tastes like tired yeasts unable to pull their weight, and the finish is deathly. \t\t\tNot up to Harmon standards.",
-        "image": "noimage.png",
-        "overall": "2.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 11,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 8.5,
-        "sku": "7473",
-        "name": "Founders Dirty Bastard",
-        "style": "Scotch Ale / Wee Heavy",
-        "description": "Poured from 12 oz. bottle into a Sam Adams perfect pint glass.\t\tAppearance: Deep and dark ruby red with a tint of orange. Lots of rising bubbles and a nice three finger tan head with good retention and lots of sticky lacing. \t\tSmell: Big aroma of sweet roasted malts with lots of caramel and toffee. Some oats, molassas, butterscotch, and brown sugar. Also some hints of dark fruits with raisin and plum. Light hints of floral hops. \t\tTaste: Like the smell, sweet roasted malts with caramel and toffee mixed with a big dose of molassas, brown sugar, butterscotch, oats, and raisins. Finishes with a lightly bitter kick from some floral hops. Very malt driven and sweet while still being well balanced. \t\tMouthfeel: Medium to full bodied with a moderate carbonation. Creamy and chewy. Not noticing any alcohol heat. \t\tOverall: This is a very fine ale that is packed with toasty malt and scotch flavor while still remaining very smooth.",
-        "image": "noimage.png",
-        "overall": "4.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 12,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 10.5,
-        "sku": "7474",
-        "name": "Founders Imperial Stout",
-        "style": "Russian Imperial Stout",
-        "description": "Bottle poured into a tulip.\t\tA - Pours jet black with a dark brown, rich head about a finger. Leaves plenty of lacing throughout my drinking of it.\t\tS - Dark Chocolate, Roasted Malts are bold. Hints of coffee, hops and sugary notes.\t\tT - Dark Chocolate hits first with a roasted malts/oak undertone. You get a little bit of the sweet sugary/camamel taste as well. The beer finishes with the hoppy after-taste, alcohol is hidden pretty well.\t\tM - Heavy and rich, good medium carbonation. The alcohol is hidden pretty well, hoppy finish. \t\tO - This was the first time I've had the FIS. It was a pretty nice surprise, very well done and complex flavors that melded together quite nicely for a regular run of the mill imperial stout from them. Makes me look forward to KBS!",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 13,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 11.2,
-        "sku": "7475",
-        "name": "Founders KBS (Kentucky Breakfast Stout)",
-        "style": "American Double / Imperial Stout",
-        "description": "Kentucky Breakfast Stout is yet another outstanding brew from Founders. Pouring almost pitch black with a light layer of dark brown foam, it's aroma is full of coffee, chocolate, with hints of vanilla and bourbon. The taste yields this array of flavor, with both the vanilla and bourbon having greater interplay with the dominating coffee and chocolate. Some roasted flavor is evident as well. The alcohol provides a bit of warmth, but in a very pleasant way. KBS is delicious, and very drinkable. Given the ABV, it's not likely something you'd session on, but it's a great way to start or end an evening.\t\tDoes it live up to the hype? Absolutely.",
-        "image": "noimage.png",
-        "overall": "5.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 14,
-      "model": "products.product",
-      "fields": {
-        "category":3,
-        "ABV": 8.4,
-        "sku": "7476",
-        "name": "Bogemia",
-        "style": "Euro Pale Lager",
-        "description": "A: 1 finger white head, a clear golden color\t\tS: Sweet aroma, strong alcohol smell\t\tT: very strong alcohol taste, I guess that should be expected with 8.4% alcohol\t\tM: Light, malty creaminess, lightly carbonated, a little bit of a bitter finish,\t\tD: I'm not a very big fan, I could only drink the one, and I won't buy any more",
-        "image": "noimage.png",
-        "overall": "2.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 15,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 7.0,
-        "sku": "7477",
-        "name": "Stoudt's Blonde Double MaiBock",
-        "style": "Maibock / Helles Bock",
-        "description": "Pours out in a pretty golden stream, filling the glass. Results in a thin head that dissipates to a ring. Light lacing. Smells of sweet malt, a little oxidation, nothing outstanding, but ok. Tastes sweet, malty, barely noticeable bitterness. somewhat cloying. Good mouthfeel, not overcarbonated, very smooth. Overall a nice beer, but nothing worth writing home about.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 16,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 8.3,
-        "sku": "7478",
-        "name": "Founders Breakfast Stout",
-        "style": "American Double / Imperial Stout",
-        "description": "A- pitch black- barely any head. \tS- hint of coffee and vanilla. \tT- coffee and vanilla flavored. not too much and not too little. not overpowering bitter but is bitter. \tMF- heavy and thick mouth feel. light to medium carbonation.\tD- would definitely drink again. is in my top 2 pick. very easy drinking for this style of beer.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 17,
-      "model": "products.product",
-      "fields": {
-        "category":5,
-        "ABV": 6.5,
-        "sku": "7479",
-        "name": "Pike India Pale Ale",
-        "style": "American IPA",
-        "description": "Pours a clear tea-like color with a nice dense cream-colored head. The aroma consists of pungent citrus hops and light sweet malts in the background. The taste is watery with more citrus hop bite with very faint malts lurking in the distant background. It is a little on the astringent side as it is just lacking in malt flavor and aroma. This is a very light bodied beer that finishes slightly dry.\t\tNotes: This could be a good beer on a hot day as it is not at all sticky. Clean and crisp with hops, alcohol, and very little malt character. Not bad, but lacking. Cheers!",
-        "image": "noimage.png",
-        "overall": "3.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 18,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 5.5,
-        "sku": "7480",
-        "name": "Aecht Schlenkerla Fastenbier",
-        "style": "Rauchbier",
-        "description": "Thanks to exiled for sharing this bottle.\t\tThe beer pours light brown with a minimal head. The aroma is very sweet, with malt and caramel. The flavor is sweetness with some light hoppy bitterness at the end. Lots of toffee and caramel. Medium mouthfeel and medium carbonation. Not sure of the date of this bottle, but there was not hardly any hop presence in this beer at all. Still good, just not what I expected.",
-        "image": "noimage.png",
-        "overall": "4.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 19,
-      "model": "products.product",
-      "fields": {
-        "category":1,
-        "ABV": 5.7,
-        "sku": "7481",
-        "name": "Kirkland Signature Amber Ale",
-        "style": "American Amber / Red Ale",
-        "description": "I had this on tap at kickbacks and I was pleasantly suprised, not a world class bee but somethign different that was good. Typical belgian saison style, somewhat light but some interesting herbal complexity. I don;t know what wormwood taste like but it was attractive addition to a saison. Try this.... pretty decent but not all world.",
-        "image": "noimage.png",
-        "overall": "3.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 20,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 11.2,
-        "sku": "7482",
-        "name": "Founders KBS (Kentucky Breakfast Stout)",
-        "style": "American Double / Imperial Stout",
-        "description": "The Centennial IPA pours a nicely carbonated reddish gold, with a mild head. Not suprisingly, it smells like hops, nice flowery mild hops. That is pretty much how it tastes too, a bit more flowery than some. Comes with typical IPA cheek pucker and oily mouthfeel. It is as easy to drink as any other IPA, and may get another chance. Too many other IPAs still to try before this one's number gets called again though.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 21,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 10.5,
-        "sku": "7483",
-        "name": "Founders Black Biscuit",
-        "style": "Old Ale",
-        "description": "Founders Imperial Stout is a tasty RIS with some smokey character.\t\tA: Black with good 15 mm head. 4.5\t\tS: Smells malty with some roasty/smokey character. 4.5\t\tT: Roasty malt and coffee and into a smokey aftertaste. 4.5\t\tM: Thick and good. 4\t\tO: Yum. Not as good as the KBS I just had though. 4",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 22,
-      "model": "products.product",
-      "fields": {
-        "category":2,
-        "ABV": 8.3,
-        "sku": "7484",
-        "name": "Founders Breakfast Stout",
-        "style": "American Double / Imperial Stout",
-        "description": "I had this on tap at CBC, Being an IPA that includes rye grain, the immediate comparison would be to Hop Rod Rye from Bear Republic, but this beer has a style and character all its own. It poured very hazy deep copper color with a decent cream colored head. There was decent head retention and lace. Mild citrus and hop flower aromas rose from the glass along with just a slight nutty character. Nice hop bitterness up front with a citrus back. Mild malt sweetness, and again just a hint of the nutty rye flavor. Bitterness lingers. Slightly slick mouth feel good drinkability. Ive begun to enjoy hoppy rye beers such as this. I hope CBC brews more in the future.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 23,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 5.4,
-        "sku": "7485",
-        "name": "Aecht Schlenkerla Rauchbier Marzen",
-        "style": "Rauchbier",
-        "description": "Pours a murky amber with a nice off-white head. There's enough yeast in this bottle to brew a batch without a starter. It's outta control. \t\tNose is quite spicy, with the cinnamon and nutmeg jumping out at you and little else escaping. It's rich and full in the mouth, fairly spicy with the spcies lasting long into the finish. As it warms, the soft, bready aspects rise up and the pumpkin flavor becomes predominant. The level of spice remains high, but now it's balanced just wonderfully with the malt and pumpkin. The finish is long, spicy and rounded out with that breadiness.\t\tSo drinkable that I went through three and only stopped because I didn't want to run out before Friday night.\t\tReally, really nice. I don't like pumpkin beers. I really like this beer, though, it'll be a regular in my fridge until it's season is gone. \t\t\tTop-noch effort from the area's quirkiest brewery.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 24,
-      "model": "products.product",
-      "fields": {
-        "category":1,
-        "ABV": 7.2,
-        "sku": "7486",
-        "name": "Nick's Balls Of Gold",
-        "style": "American IPA",
-        "description": "Got this from a best friend that shipped it back from his vacation. \t\tThe appearance is an amber to brighter red. This is actually the color of a red ale. It pours a one finger head with a crisp carbonation. \t\tThe smell is of a sweet sweet alcohol and bitter hops. Also some honey and citrus. \t\tThe taste is good, but the alcohol presence is clear. It tastes more like a strong ale, something along the lines of a Arrogant Bastard. It is good, a real oily mouthfeel. Hop flavors abound, really nice, also a warm cinnamon flavor as well. \t\tThe drinkabilty is good. You can taste the alcohol once it warms up, but really nothing spectacular stands out. The nice aspect to the brew, as stated earlier, is the oil that coats the mouth when a taste is taken. Overall a good beer, nothing outstanding, but worth trying. \t\tJ",
-        "image": "noimage.png",
-        "overall": "4.5",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 25,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 5.0,
-        "sku": "7487",
-        "name": "Trafalgar Oak-Aged Rye",
-        "style": "Rye Beer",
-        "description": "I had this one on tap at the Horse Brass in Portland, Oregon. It came in dark orange/golden color with a good sized frothy white head that left lacing on the glass all the way down. It smelled very hoppy and sweet/sour in a citrus way as well. The taste was great. Very hoppy and bitter with a kind of sweet citrus tone to it as well. Mouthfeel was good, this one has some bite and it left a dry/bitter aftertaste that made my mouth water for more. Overall this is a good beer, tastes great, goes down smooth, doesn't disappoint.",
-        "image": "noimage.png",
-        "overall": "3.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 26,
-      "model": "products.product",
-      "fields": {
-        "category":1,
-        "ABV": 9.4,
-        "sku": "7488",
-        "name": "Founders Double Trouble",
-        "style": "American Double / Imperial IPA",
-        "description": "Got this brew in a recent BIF. Thanks Auslander. 22oz bottle, 2010...\t\tA: A beautiful orange / iced tea blended color with no head at all. Decent.\t\tS: I get some brown sugar, nutmeg, and pumpkin upfront with some sweet caramel malt in the middle and some, almost ketchup scent on the backend. Who doesn't like ketchup? Good.\t\tT: I get some heavy pumpkin flavor upfront with boozy nutmeg and piney flavors in the middle and some ginger and clove on the backend. Good.\t\tM: Medium body with a nice carbonation feel flirting with thick carbonation. Good.\t\tD: Goes down good despite the blend of flavors. Good.\t\tAll in all, this is a solid brew. Not amazing, but good. Good to try if you like Pumpkin ales. Otherwise, don't bother hunting down.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 27,
-      "model": "products.product",
-      "fields": {
-        "category":4,
-        "ABV": 6.9,
-        "sku": "7489",
-        "name": "Founders Rabaus",
-        "style": "Fruit / Vegetable Beer",
-        "description": "A great Helles O-fest.\t\tA: Bronze with an off-white head, good retention & lacing.\t\tS: Steelie grass, floral & herbal with some bread & toffee from the malt.\t\tT: Steelie grass, minty herbalness, floral, toffee, bread, good bitterness, hints of earthy sulfur from the lager yeast.\t\tM: Moderate body is smooth with a crisp, slightly off-dry finish.\t\tD: Lovin' it.",
-        "image": "noimage.png",
-        "overall": "4.0",
-        "price": 2.50
-      }
-    },
-    {
-      "pk": 28,
-      "model": "products.product",
-      "fields": {
-        "category":5,
-        "ABV": 5.4,
-        "sku": "7490",
-        "name": "Founders Pale Ale",
-        "style": "American Pale Ale (APA)",
-        "description": "Poured from a bottle into a snifter glass\t\tA: Pours a hazy orange/amber color with a small head that dissipates quickly. Leaves some thin lacing down the side of the glass\t\tS: I get a pretty standard hoppy/citrus aroma with some pine and a little bit of caramel. \t\tT: Nice hops upfront and a balanced malt back end along with a little bit of yeast. \t\tM/D: Medium to light bodied. A good IPA, but not my favorite. It is pretty easy drinking and is well balanced and does not leave an overly bitter aftertaste.",
-        "image": "noimage.png",
-        "overall": "3.0",
-        "price": 2.50
-      }
+  {
+    "pk": 1,
+    "model": "products.product",
+    "fields": {
+      "category": 2,
+      "ABV": 7.4,
+      "sku": "7001",
+      "name": "Alphabet Flat White",
+      "country": "Britain",
+      "description": "Greater Manchester is home to a boatload of amazing breweries, and Alphabet are one of the forerunners. Their Flat White is, aptly enough, a white variant of a breakfast stout. Expect the usual oaty, coffee flavours of your regular breakfast stout, but with a particularly milky flavour that sets it apart from the pack.",
+      "image": "flat_white.png",
+      "overall": "4.0",
+      "price": 2.79
     }
-  ]
+  },
+  {
+    "pk": 2,
+    "model": "products.product",
+    "fields": {
+      "category": 6,
+      "ABV": 4.5,
+      "sku": "7002",
+      "name": "Vocation Pure Pilsner",
+      "country": "Britain",
+      "description": "Vocation have been hitting the Pilsners hard recently and to great success. Pure Pilsner is their classic variant. At 4.2%, it’s sessionable and it pours a wonderful clear gold. To taste, it’s every bit the classic pilsner: clean, crisp and with the signature bitter bite that every true pilsner should come with. There’s hay, a light spice and bready malts rounding off what is a perfect example of a classic style. Well done Vocation!",
+      "image": "vocation_pure_pilsner.png",
+      "overall": "3.5",
+      "price": 1.79
+    }
+  },
+  {
+    "pk": 3,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 5.9,
+      "sku": "7003",
+      "name": "Thornbridge Jaipur",
+      "country": "Britain",
+      "description": "Jaipur the Thornbridge star! This beer has won so many awards it can't stand up straight! A really wonderful hoppiness leaves you wanting more and that, combined with a none too subtle 5.9% ABV, has led to the phrase 'I'm just a bit jaipured' becoming a real phrase in some parts! Tropical fruits and grassy tastes abound if you don't drink at fridge temperature.",
+      "image": "thornbridge_jaipur.png",
+      "overall": "4.0",
+      "price": 1.8
+    }
+  },
+  {
+    "pk": 4,
+    "model": "products.product",
+    "fields": {
+      "category": 3,
+      "ABV": 4.5,
+      "sku": "7004",
+      "name": "Brewgooder Clean Water Lager",
+      "country": "Britain",
+      "description": "How often do you drink a beer that genuinely does good in the world? That’s exactly what Brewgooder does - 100% of their profits go to providing clean water to communities that need it around the world. So not only are you helping those in need, but you also get to enjoy a ruddy good lager - brewed with Sorachi Ace and Saaz hops - at the same time. This really is a good beer!",
+      "image": "brewgooder_clean_water_lager.png",
+      "overall": "4.0",
+      "price": 1.99
+    }
+  },
+  {
+    "pk": 5,
+    "model": "products.product",
+    "fields": {
+      "category": 5,
+      "ABV": 4.2,
+      "sku": "7005",
+      "name": "Harviestoun Bitter & Twisted",
+      "country": "Britain",
+      "description": "Famed for the great but more common Bitter and Twisted and Schiehallion, we believe Harviestoun's best beers are their darker Porters and Stouts. It's either in the pure Scottish water of the Ochi hills or something in the Scottish Malts, either way we love 'em. Their icon and mascot is a fractious mouse which appears on each of the labels and was apparently the inspiration for the first brew. Bitter and Twisted is a classic English golden ale--and a former Champion Beer of Britain--with a superb hop profile of Hersbrucker, Challenger, and Styrian Goldings. Spicy, zesty, bitter and with a twist of lemon, this delicately carbonated ale finishes clean and dry. It's quite refreshing!",
+      "image": "harviestoun_bitter_and_twisted.png",
+      "overall": "4.5",
+      "price": 1.99
+    }
+  },
+  {
+    "pk": 6,
+    "model": "products.product",
+    "fields": {
+      "category": 5,
+      "ABV": 4.7,
+      "sku": "7006",
+      "name": "Black Sheep My Generation",
+      "country": "Britain",
+      "description": "We’re going to put it out there and say hard candy on the nose, call us crazy. Pour is slightly hazy and is pale yellow in colour. Taste is quite sweet, with a little orange and bread and a delicately bitter finish.",
+      "image": "black_sheep_my_generation.png",
+      "overall": "3.5",
+      "price": 2.09
+    }
+  },
+  {
+    "pk": 7,
+    "model": "products.product",
+    "fields": {
+      "category": 5,
+      "ABV": 5.6,
+      "sku": "7007",
+      "name": "Black Sheep Pathmaker",
+      "country": "Britain",
+      "description": "The self-proclaimed guardians of The North created this little number in tribute to their founder Paul Theakston. The ‘hipster’ illustration certainly took us by surprise, it’s good to see them endeavour to keep up with the modern beer drinker. Grapefruit on the nose of this hazy yellow brew. Sweet malt character and a surprising tropical element, we recommend you crack this open for BBQs, nativity plays, christenings and any other occasion.",
+      "image": "blacksheep_pathmaker.png",
+      "overall": "3.5",
+      "price": 2.19
+    }
+  },
+  {
+    "pk": 8,
+    "model": "products.product",
+    "fields": {
+      "category": 6,
+      "ABV": 5,
+      "sku": "7008",
+      "name": "Berliner Pilsner",
+      "country": "Germany",
+      "description": "The bear on the can is a reference to the Berlin coat of arms, fun fact! A perfectly clear golden pour with a generous white head. Roasted malt and hay on the nose, slight caramel malt taste and a crisp clean finish. An excellent example of a pilsner, Prost!",
+      "image": "berliner_pilsner.png",
+      "overall": "3.5",
+      "price": 2.29
+    }
+  },
+  {
+    "pk": 9,
+    "model": "products.product",
+    "fields": {
+      "category": 4,
+      "ABV": 4.9,
+      "sku": "7009",
+      "name": "Hoegaarden",
+      "country": "Belgium",
+      "description": "Even in Belgium before the 1960s, you’d have struggled to find a witbier. That is, until Pierre Celis resurrected this style of wheat beer – once widely brewed – in the town of Hoegaarden. Celis revived the style adding coriander seeds and Curaçao orange peel to make one of the world’s most refreshing styles. Today, Hoegaarden is the world’s most popular witbier and drank around the world.",
+      "image": "hoegaarden.png",
+      "overall": "4.0",
+      "price": 2.29
+    }
+  },
+  {
+    "pk": 10,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 4.1,
+      "sku": "7010",
+      "name": "Goose Island Midway",
+      "country": "America",
+      "description": "Goose Island were one of the early titans of the American craft scene and they have churned out great beer after great beer. Midway is Goose’s offering for those who love big American IPAs but perhaps want to dial down the ABV a bit. It packs all the flavour into a lower ABV format commendably. It’s got the big pine and resin licks and a solid biscuit base that will have you coming back for more at the beginning, Midway through and at the end of a good ol’ session.",
+      "image": "goose_island_midway.png",
+      "overall": "4.5",
+      "price": 2.29
+    }
+  },
+  {
+    "pk": 11,
+    "model": "products.product",
+    "fields": {
+      "category": 5,
+      "ABV": 5.5,
+      "sku": "7011",
+      "name": "Union Sunday Pale Ale",
+      "country": "Germany",
+      "description": "Brewers & Union work with both German and Belgian brewers to develop a fantastically rich range of artisan beer. All are unfiltered so have a lovely full texture and flavour. While angered by the monotonous flavours so widely available in lager, they have a wonderfully realistic philosophy 'We don't believe we can single-handedly change the world of beer, but with a little raw passion, blind optimism and reckless resolve, we can perhaps make a difference. And Union works with small Bavarian breweries to produce modern, flavoursome beer which is unfiltered and unpasteurised. This is an easy drinking pale ale with notes of soft citrus fruit and freshly cut grass, balanced by toffee and biscuit with a lightly resinous finish.",
+      "image": "union_sunday_pale_ale.png",
+      "overall": "5.0",
+      "price": 2.49
+    }
+  },
+  {
+    "pk": 12,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 4.4,
+      "sku": "7012",
+      "name": "Yeastie Boys Big Mouth",
+      "country": "New Zealand",
+      "description": "Yeastie Boys is part of the New Zealand Beer Collective that is taking the country by storm with the lively beers out of the country. Big Mouth is a session IPA rolling in at 4.4%, full of trademark South Pacific hops that give a mesmeric tropical taste. Despite being in the middle of January, sip this and be transported to summer.",
+      "image": "yeastie_boys_big_mouth.png",
+      "overall": "4.0",
+      "price": 2.59
+    }
+  },
+  {
+    "pk": 13,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 7.1,
+      "sku": "7013",
+      "name": "Flying Dog Snake Dog",
+      "country": "America",
+      "description": "Flying Dog Brewery Gonzo journalist and long time friend of Flying Dog owner George Stranahan, Hunter S Thompson was a large influence on the creation of Flying Dog brand. The unique labels and branding are the work of artist co-conspirator Ralph Steadman. This American IPA from Flying Dog is 60 IBUs of goodness! Packed full of Warrior and Columbus hops, Snake Dog's grapefruit, resinous pine and caramel flavours give way to a long, lingering bitterness which will delight any hop lover. At a robust 7.1% it's a great match for spicy food, but is equally enjoyable to drink on its own when you fancy something big and bitter.",
+      "image": "flying_dog_snake_dog.png",
+      "overall": "4.5",
+      "price": 2.69
+    }
+  },
+  {
+    "pk": 14,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 4.2,
+      "sku": "7014",
+      "name": "The White Hag Little Fawn",
+      "country": "Ireland",
+      "description": "With sharp citrus and tropical fruit flavours throughout, this 4.2% ABV session IPA from The White Hag is dry and refreshing. Little Fawn has a balanced bitter character, accompanied by prominent notes of pineapple, lemon peel and light biscuit malts.",
+      "image": "the_white_hag_little_fawn.png",
+      "overall": "3.5",
+      "price": 2.79
+    }
+  },
+  {
+    "pk": 15,
+    "model": "products.product",
+    "fields": {
+      "category": 3,
+      "ABV": 4.7,
+      "sku": "7015",
+      "name": "Amundsen Run To The Pils",
+      "country": "Norway",
+      "description": "Run to the Pils, Run for your life!!! At Beer Hawk we have a lot of time for beer based puns; our Norwegian chums at Amundsen have treated us to their bizarre, yet wonderful interpretation of a classic Pilsner beer. By appearance, everything seems relatively normal. But the sharp smell of fresh lemon grass along with the piney aroma of American Hops quickly lets you know that there are deeper things at work here. The citrus and pine join in a marvellous team up, providing a level of refreshment you won’t be ready for.",
+      "image": "amundsen_run_to_the_pils.png",
+      "overall": "5.0",
+      "price": 2.99
+    }
+  },
+  {
+    "pk": 16,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 4.5,
+      "sku": "7016",
+      "name": "Firestone Walker Easy Jack",
+      "country": "America",
+      "description": "Packing a load of flavour into 4.5% ABV, Firestone Walker's Easy Jack is a Session IPA that features hop varieties from Germany, New Zealand and North America. Predictably, the hops are prominent with flavours of pineapple, mango, peach and grapefruit yet its classic malt profile provides a fantastic balance. Medium-bodied, moderately carbonated and bitter for ages, it's EASY (see what we did there?) to love this beer.",
+      "image": "firestone_walker_easy_jack.png",
+      "overall": "4.0",
+      "price": 2.99
+    }
+  },
+  {
+    "pk": 17,
+    "model": "products.product",
+    "fields": {
+      "category": 5,
+      "ABV": 5.6,
+      "sku": "7017",
+      "name": "Omnipollo Mazarin",
+      "country": "Sweden",
+      "description": "A pale ale from legendary Swedish brewers Omnipollo, Maz is a delight to drink. Pouring cloudy, amber with a beautiful, fluffy white head. The aroma blasts citrus in your face, with lime, orange and grapefruit all in evidence. A taste starts sweet and fruity, with grapefruit and spices the dominant flavours . It finishes medium bitter and will have your coming back again and again and again. Omnipollo knock it out of the park on this one!",
+      "image": "omnipollo_mazarin.png",
+      "overall": "5.0",
+      "price": 4.89
+    }
+  },
+  {
+    "pk": 18,
+    "model": "products.product",
+    "fields": {
+      "category": 2,
+      "ABV": 5,
+      "sku": "7018",
+      "name": "Moor Stout",
+      "country": "Britian",
+      "description": "This is a wonderfully smooth stout from Moor. A medium body with all the right flavours, toasted malt, chocolate, molasses, coffee. Some wonderful sweet qualities, a little toffee and caramel thrown in for good measure. This is all beautifully balanced with slightly bitter coffee notes. Well rounded and thoroughly enjoyable.",
+      "image": "moor_stout.png",
+      "overall": "4.0",
+      "price": 2.99
+    }
+  },
+  {
+    "pk": 19,
+    "model": "products.product",
+    "fields": {
+      "category": 3,
+      "ABV": 4.9,
+      "sku": "7019",
+      "name": "Mondo Brewing ALL CAPS",
+      "country": "Britian",
+      "description": "The All Caps Pilsner is one of Mondo Brewing Company's core range beers. Focusing on drinkability as opposed to massive flavours, this classic American-style lager doesn't rely on dry-hopping or smoke machines to make it interesting. Noble hop aromas are mirrored on the palate alongside a corn-grain sweetness with notes of hay, a bit of orange and a solid bitterness. A light body, creamy mouthfeel and a crisp, dry finish won't have you screaming in ALL CAPS but you'll finish this thinking you just had a really nice beer.",
+      "image": "mondo_brewing_all_caps.png",
+      "overall": "3.0",
+      "price": 2.39
+    }
+  },
+  {
+    "pk": 20,
+    "model": "products.product",
+    "fields": {
+      "category": 4,
+      "ABV": 4.4,
+      "sku": "7020",
+      "name": "Yeastie Boys White Noise",
+      "country": "New Zealand",
+      "description": "A quaffable, cloudy white ale that is perfect for those afternoon sessions after a hard day's work or play. Pours a cloudy pale straw colour with a dense mousse-like white head. A perfumy coconut and vanilla note on the nose, with a little citrus and spice, and bready grains from the wheat. The mouthfeel is full for such a pale beer, but still very light and elegant. The beer finishes with a cleansing acidity, a faint spicy note and only the mildest touch of citrus from the virtually non-existent hops.",
+      "image": "yeastie_boys_white_noise.png",
+      "overall": "3.5",
+      "price": 2.79
+    }
+  },
+  {
+    "pk": 21,
+    "model": "products.product",
+    "fields": {
+      "category": 1,
+      "ABV": 5.0,
+      "sku": "7021",
+      "name": "Williams Bros. Joker",
+      "country": "Britain",
+      "description": "Laughing madly, the Joker will caper through your beery gathering, sprinkling mischief and mirth wherever it goes. Joker IPA is a classic IPA with a few modern twists. It's lightly hopped with American hops giving it a tasty citrus tang, and it's backed up with a solid malty base and some pleasing grassy and earthy overtones. Perfect for a party, this beer is crowd-pleaser which will keep everybody, old and young happy and jolly.",
+      "image": "joker_ipa.png",
+      "overall": "4.0",
+      "price": 1.99
+    }
+  },
+  {
+    "pk": 22,
+    "model": "products.product",
+    "fields": {
+      "category": 2,
+      "ABV": 10.5,
+      "sku": "7022",
+      "name": "Amundsen Dessert In A Can Choco Marshmellow",
+      "country": "Britain",
+      "description": "Liquid chocolate cake? Errr yes please Amundsen!!!! The moment you pour this beautiful beer, the first thing you notice is that the texture is thick and unctuous, rolling it’s way around the glass and you know you’re in for a treat of a lifetime. The aroma is akin to the richest chocolate fondant and the mouthfeel is silky smooth. Flavours jump from sticky toffee and chocolate milkshake in a heartbeat, and you’d almost be tempted to have a scoop of vanilla ice cream on the side. Amundsen were not lying – this really is a desert in a can. Unless you read the side of the can, you’d be forgiven for having no idea that this beer rocks in at 10.5%! Go on… See the desert menu….",
+      "image": "choco_marshmellow.png",
+      "overall": "4.0",
+      "price": 6.20
+    }
+  }
+]

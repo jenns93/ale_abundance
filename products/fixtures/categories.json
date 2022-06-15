@@ -27,8 +27,8 @@
       "pk": 4,
       "model": "products.category",
       "fields": {
-        "name": "other",
-        "friendly_name": "Other"
+        "name": "wheat beer",
+        "friendly_name": "Wheat Beer"
       }
     },
     {
