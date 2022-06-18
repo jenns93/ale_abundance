@@ -2,6 +2,7 @@ from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
 from django.contrib.auth.models import User
+from profiles.models import UserProfile
 
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category
@@ -199,13 +200,26 @@ def favourite_add(request, product_id):
 
     if product.favourites.filter(pk=request.user.id).exists():
         product.favourites.remove(request.user)
-        messages.success(request, f'{product.name} removed from favourites!')
+        messages.info(request, f'{product.name} removed from favourites!')
     else:
         product.favourites.add(request.user)
-        messages.success(request, f'{product.name} added to favourites!')
+        messages.info(request, f'{product.name} added to favourites!')
 
     context = {
         'products': products,
         }
 
     return render(request, 'products/products.html', context)
+
+
+@login_required
+def fav_list(request):
+
+    user = request.user
+    allfav = user.favourite.all()
+
+    context = {
+        'allfav': allfav, } 
+    return render(request, 'products/favourites_list.html', context)
+
+    

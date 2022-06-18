@@ -41,7 +41,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-6 my-2">
+            <div class="col-12 col-md-8 my-2">
                 <ul class="list-inline list-unstyled text-center text-md-left my-0" style="position: ;absolute">
                     <li class="list-inline-item dropdown">
                         <button class="btn btn-black rounded-10 text-uppercase" type="button" data-toggle="collapse" data-target="#collapseorder" aria-expanded="false" aria-controls="collapseorder"><i class="fas fa-box"></i> View Order History:</button>
@@ -91,16 +91,6 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-12 col-md-2 my-2">
-                <p class="text-muted text-center"><i class="fas fa-heart"></i> My favorites</p>
-                <hr>
-                {% for product in new %}
-                    <p>fav 1</p>
-                    {{ product.name }}
-                    <a href="{% url 'products:favourite_add' product.id %}">Remove</a>
-                {% endfor %}
-                <hr>
-            </div>      
                 
         </div>
     </div>

@@ -55,5 +55,18 @@ def order_history(request, order_number):
 @login_required
 def favourite_list(request):
     """ Display the user's favourites. """
-    new = Product.newmanager.filter(favourites=request.user)
-    return render(request, 'profiles/profile.html', {'new': new})
+    user = request.user
+    form = UserProfileForm(instance=profile)
+    favourite_add = user.favourites.all()
+    
+    orders = profile.orders.all()
+   
+    template = 'profiles/profile.html'
+    context = {
+        'form': form,
+        'orders': orders,
+        'favourite_add': favourite_add,
+        'on_profile_page': True
+    }
+
+    return render(request, template, context)
