@@ -94,7 +94,11 @@
             <div class="col-12 col-md-2 my-2">
                 <p class="text-muted text-center"><i class="fas fa-heart"></i> My favorites</p>
                 <hr>
-                {{ favorites }}
+                {% for product in new %}
+                    <p>fav 1</p>
+                    {{ product.name }}
+                    <a href="{% url 'products:favourite_add' product.id %}">Remove</a>
+                {% endfor %}
                 <hr>
             </div>      
                 

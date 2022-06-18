@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from products.models import Product
 from .models import UserProfile
 from .forms import UserProfileForm
+
 
 from checkout.models import Order
 
@@ -48,3 +50,10 @@ def order_history(request, order_number):
     }
 
     return render(request, template, context)
+
+
+@login_required
+def favourite_list(request):
+    """ Display the user's favourites. """
+    new = Product.newmanager.filter(favourites=request.user)
+    return render(request, 'profiles/profile.html', {'new': new})

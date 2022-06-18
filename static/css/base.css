@@ -37,6 +37,18 @@ body {
     background:rgb(122, 15, 143);
     color: white;
 }
+.btn-fav {
+    background:white;
+    color: rgb(122, 15, 143);
+}
+
+.btn-fav:active {
+    background:rgb(122, 15, 143);
+    color: white;
+}
+.btn-fav:hover {
+    color: rgb(189, 187, 67);
+}
 
 .btn-outline-black {
     background: white;

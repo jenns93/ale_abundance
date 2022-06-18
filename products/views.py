@@ -1,6 +1,8 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
+from django.contrib.auth.models import User
+
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category
 from .forms import ProductForm
@@ -55,6 +57,7 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
+        
     }
 
     return render(request, 'products/products.html', context)
@@ -72,6 +75,11 @@ def product_detail(request, product_id):
     items = list(Product.objects.all())
 
     random_items = random.sample(items, 4)
+    is_favourite = False
+
+    if product.favourites.filter(pk=request.user.id).exists():
+        is_favourite = True
+
 
     if request.GET:
         if 'sort' in request.GET:
@@ -99,6 +107,7 @@ def product_detail(request, product_id):
         'products': products,
         'current_categories': categories,
         'random_items': random_items,
+        'is_favourite': is_favourite,
     }
     
     return render(request, 'products/product_detail.html', context)
@@ -181,3 +190,22 @@ def delete_product(request, product_id):
 
     return render(request, template, context)
     
+
+@login_required
+def favourite_add(request, product_id):
+    """ Add to favourites """
+    product = get_object_or_404(Product, pk=product_id)
+    products = Product.objects.all()
+
+    if product.favourites.filter(pk=request.user.id).exists():
+        product.favourites.remove(request.user)
+        messages.success(request, f'{product.name} removed from favourites!')
+    else:
+        product.favourites.add(request.user)
+        messages.success(request, f'{product.name} added to favourites!')
+
+    context = {
+        'products': products,
+        }
+
+    return render(request, 'products/products.html', context)
