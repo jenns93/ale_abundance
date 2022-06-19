@@ -32,3 +32,18 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+
+class Review_Product(models.Model):
+    """
+    Review product model
+    """
+    product = models.ForeignKey(Product, on_delete=models.CASCADE, related_name="reviews_p")
+    user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="reviews_u")
+
+    content = models.TextField(blank=True, null=True)
+    stars = models.IntegerField()
+    
+    date_added = models.DateTimeField(auto_now_add=True)
+
+    

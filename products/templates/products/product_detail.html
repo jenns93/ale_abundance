@@ -40,6 +40,7 @@
                                 <i class="far fa-bookmark"></i>
                             </a>
                             {% endif %}
+                            <a href="{% url 'review' product.id %}">Write a review</a>
                         {% endif %} 
                     </p>
                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
@@ -112,7 +113,31 @@
         </div>
     </div>
     <hr>
-    <div class="d-flex justify-content-center">
+    <div class="row">
+        {% for product_review in product_reviews %}
+        <div class="row col-12">
+            <div class='card ml-3 mb-2 border-0'>
+            <div class="card border-0 shadow">
+                <p>
+                    <i class="fa-solid fa-user"style="color:rgb(122, 15, 143)"></i> {{ product_review.user }} Reviewed: {{ product_review.product }} | On: {{ product_review.date_added|date:'d/m/y' }}</p>
+                </p>
+                <p>
+                    <i class="fa-regular fa-comment" style="color:rgb(122, 15, 143)"></i> {{ product_review.content }} | <i class="fas fa-star mr-1" style="color:rgb(189, 187, 67)"></i>{{ product_review.stars }}/5
+                </p>
+                
+            </div>
+            </div>
+        {% empty %}
+            <div class="card border-0 shadow ml-5 col-12">
+                <p>no reviews </p>
+            </div>
+            
+        </div>
+        {% endfor %}
+    </div>
+    
+    
+    <div class="d-flex justify-content-center col-12">
         <span class="icon"><i class="fas fa-angle-down"></i></span>
         <h4 class="d-flex justify-content-center"> You may also enjoy </h4>
         <span class="icon"><i class="fas fa-angle-down"></i></span>

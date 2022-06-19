@@ -1,0 +1,52 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+    <div class="overlay"></div>
+    <div class="container-fluid">
+        {% if request.user.is_authenticated %}
+            <h4>User posting review: {{ user.username }}</h4>
+            <h4>Reviewing: {{ product.name }}</h4>
+            <form method="post" action=".">
+                {% csrf_token %}
+                <div class="field">
+                    <label>Rating</label>
+
+                    <div class="control">
+                        <div class="select">
+                            <select name="rating">
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3" selected>3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Content</label>
+                    <div class="control">
+                        <textarea class="textarea" name="content"></textarea>
+                    </div>
+                </div>
+                <div class="field">
+                    <div class="control">
+                        <button>Submit Review</button>
+                    </div>
+                </div>
+            </form>
+        {% else %}
+            <p>sign in to review</p>
+        {% endif %}
+    </div>
+
+{% endblock %}

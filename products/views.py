@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 from profiles.models import UserProfile
 
 from django.contrib.auth.decorators import login_required
-from .models import Product, Category
+from .models import Product, Category, Review_Product
 from .forms import ProductForm
 
 from django.db.models.functions import Lower
@@ -69,9 +69,11 @@ def product_detail(request, product_id):
 
     product = get_object_or_404(Product, pk=product_id)
     products = Product.objects.all()
+    product_reviews = Review_Product.objects.filter(product=product_id)
     sort = None
     categories = None
     direction = None
+    
 
     items = list(Product.objects.all())
 
@@ -102,13 +104,18 @@ def product_detail(request, product_id):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
+
+
+    
     
     context = {
         'product': product,
         'products': products,
+        'product_reviews': product_reviews,
         'current_categories': categories,
         'random_items': random_items,
         'is_favourite': is_favourite,
+        
     }
     
     return render(request, 'products/product_detail.html', context)
@@ -223,3 +230,23 @@ def fav_list(request):
     return render(request, 'products/favourites_list.html', context)
 
     
+def product_review(request, product_id):
+    """ post product review """
+    product = get_object_or_404(Product, pk=product_id)
+    product_reviews = Review_Product.objects.all()
+    products = Product.objects.all()
+    
+    if request.method == 'POST':
+        stars = request.POST.get('rating', 3)
+        content = request.POST.get('content', '')
+
+        prodreview = Review_Product.objects.create(product=product, user=request.user, stars=stars, content=content)
+
+        context = {'products': products, 'prodreview': prodreview, 'product': product }
+        messages.info(request, f'Rewview for: {product.name} successfully posted!')
+        return render(request, 'products/products.html', context)
+        
+    else:
+        context = {'products': products,  'product': product }
+        return render(request, 'products/review_product.html', context)
+        
