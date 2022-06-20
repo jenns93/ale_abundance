@@ -4,6 +4,8 @@ from django.db.models import Q
 from django.contrib.auth.models import User
 from profiles.models import UserProfile
 
+
+
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Review_Product
 from .forms import ProductForm
@@ -249,4 +251,6 @@ def product_review(request, product_id):
     else:
         context = {'products': products,  'product': product }
         return render(request, 'products/review_product.html', context)
-        
+
+def page_not_found_view(request, exception):
+    return render(request, '404.html', status=404)

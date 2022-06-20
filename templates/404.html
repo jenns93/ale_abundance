@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+{% block content %}
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <hr>
+                <h2 class="logo-font mb-4">404</h2>
+                <h5 class="text-muted">Sorry page could not be found</h5>
+                <hr>
+            </div>
+        </div>
+        
+        <a href="{% url 'home' %}" class="btn btn-outline-black rounded-10 mt-3 mb-ml-3">
+            <span class="icon">
+                <i class="fas fa-chevron-left"></i>
+            </span>
+            <span class="text-uppercase">Back home</span>
+        </a>
+    </div>
+        
+{% endblock %}

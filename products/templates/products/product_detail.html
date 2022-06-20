@@ -40,7 +40,7 @@
                                 <i class="far fa-bookmark"></i>
                             </a>
                             {% endif %}
-                            <a href="{% url 'review' product.id %}">Write a review</a>
+                            <a class="btn btn-black rounded-10 text-uppercase " href="{% url 'review' product.id %}">Write a review</a>
                         {% endif %} 
                     </p>
                     <p class="lead mb-0 text-left font-weight-bold">£{{ product.price }}</p>
@@ -101,7 +101,7 @@
                                     <span class="icon">
                                         <i class="fas fa-chevron-left"></i>
                                     </span>
-                                    <span class="text-uppercase">Keep Shopping</span>
+                                    <span class="text-uppercase">Back</span>
                                 </a>
                                 <input type="submit" class="btn btn-black rounded-10 text-uppercase mt-3" value="Add to Basket">
                             </div>
