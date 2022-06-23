@@ -124,6 +124,13 @@ input[name='q']::placeholder {
     color: #aab7c4;
 }
 
+/* --------------------------------------- MailChimp */
+#mc_embed_signup {
+    background:#f1f1f1; clear:left; 
+    font:14px Helvetica,Arial,sans-serif;  
+    width:350px;
+}
+
 /* ------------------------------- bootstrap toasts */
 
 .message-container {
