@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from .forms import ContactForm
 
 # Create your views here.
 
@@ -13,3 +14,13 @@ def faq_list(request):
     """ A view to return the FAQ page """
 
     return render(request, 'home/faq.html')
+
+
+
+
+def contact_us(request):
+    form_class = ContactForm
+
+    return render(request, 'home/contact_us.html', {
+        'form': form_class,
+    })
