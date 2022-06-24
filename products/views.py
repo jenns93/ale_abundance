@@ -1,10 +1,6 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.contrib import messages
 from django.db.models import Q
-from django.contrib.auth.models import User
-from profiles.models import UserProfile
-
-
 
 from django.contrib.auth.decorators import login_required
 from .models import Product, Category, Review_Product
@@ -13,6 +9,7 @@ from .forms import ProductForm
 from django.db.models.functions import Lower
 import random
 # Create your views here.
+
 
 def all_products(request):
     """ A view to show all products, including sorting and search queries """
@@ -49,7 +46,6 @@ def all_products(request):
             if not query:
                 messages.error(request, "You didn't enter any search criteria!")
                 return redirect(reverse('products'))
-            
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
 
@@ -60,7 +56,6 @@ def all_products(request):
         'search_term': query,
         'current_categories': categories,
         'current_sorting': current_sorting,
-        
     }
 
     return render(request, 'products/products.html', context)
@@ -75,7 +70,6 @@ def product_detail(request, product_id):
     sort = None
     categories = None
     direction = None
-    
 
     items = list(Product.objects.all())
 
@@ -84,7 +78,6 @@ def product_detail(request, product_id):
 
     if product.favourites.filter(pk=request.user.id).exists():
         is_favourite = True
-
 
     if request.GET:
         if 'sort' in request.GET:
@@ -106,10 +99,7 @@ def product_detail(request, product_id):
             categories = request.GET['category'].split(',')
             products = products.filter(category__name__in=categories)
             categories = Category.objects.filter(name__in=categories)
-
-
-    
-    
+  
     context = {
         'product': product,
         'products': products,
@@ -223,7 +213,7 @@ def favourite_add(request, product_id):
 
 @login_required
 def fav_list(request):
-
+    """ favourite list view """
     user = request.user
     allfav = user.favourite.all()
 
@@ -253,4 +243,5 @@ def product_review(request, product_id):
         return render(request, 'products/review_product.html', context)
 
 def page_not_found_view(request, exception):
+    """ 404 view """
     return render(request, '404.html', status=404)

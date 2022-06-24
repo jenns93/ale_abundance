@@ -19,6 +19,7 @@ def faq_list(request):
 
 
 def contact_us(request):
+    """ A view to return the contact us page """
     form_class = ContactForm
 
     return render(request, 'home/contact_us.html', {
