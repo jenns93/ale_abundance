@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://ale-abundance.herokuapp.com/sitemap.xml
