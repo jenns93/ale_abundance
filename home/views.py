@@ -18,8 +18,6 @@ def faq_list(request):
     return render(request, 'home/faq.html')
 
 
-
-
 def contact_us(request):
     """ A view to return the contact us page """
     
